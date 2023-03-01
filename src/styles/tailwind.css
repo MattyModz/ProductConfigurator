@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next {
+  min-height: 100%;
+}
+
+.switch {
+  width: 100px;
+  height: 45px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.switch[data-isOn='teams'] {
+  justify-content: flex-end;
+}
+
+.handlecards {
+  width: 35px;
+  height: 35px;
+  background-color: red;
+  border-radius: 20px;
+}
