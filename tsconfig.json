@@ -25,13 +25,17 @@
     "**/*.ts",
     "**/*.tsx",
     "tailwind.config.js",
-    "app/layout.jsx",
+    "app/layout.tsx",
     "prisma/client.ts",
     "app/componants/Hero/Index.js",
     "app/auth/Nav.js",
     "script.js",
     "seed.js",
-    "prisma/seed.ts"
+    "prisma/seed.ts",
+    "app/page.tsx",
+    "app/head.tsx",
+    "src/componants/Table.js",
+    "src/componants/Expirience.tsx"
   ],
   "exclude": ["node_modules"]
 }

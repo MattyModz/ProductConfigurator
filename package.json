@@ -1,5 +1,5 @@
 {
-  "name": "Next13 Starter",
+  "name": "Door Product Configurator",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,6 +15,9 @@
     "@headlessui/react": "^1.7.8",
     "@heroicons/react": "^2.0.14",
     "@next/font": "^13.1.6",
+    "@react-three/drei": "^9.40.4",
+    "@react-three/fiber": "^8.9.1",
+    "@shopify/hydrogen-react": "^2023.1.6",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.10",
     "autoprefixer": "^10.4.13",
@@ -23,7 +26,8 @@
     "nodemon": "^2.0.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.1.4"
+    "tailwindcss": "^3.1.4",
+    "three": "^0.146.0"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",

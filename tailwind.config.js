@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./app/**/*.{js,jsx,tsx}'],
+  content: ['./app/**/*.{js,jsx,tsx}', './src/componants/**/*.{js,jsx,ts,tsx}'],
+
   theme: {
     container: {
       center: true,
@@ -18,9 +19,9 @@ module.exports = {
       '8xl': '6rem',
     },
     extend: {
-      backgroundImage: {
-        svg: "url('../../public/bgsvg.svg')",
-      },
+      // backgroundImage: {
+      //   svg: "url('../../public/bgsvg.svg')",
+      // },
     },
   },
 }
