@@ -27,7 +27,7 @@ export default function Doorpartnav() {
 
   return (
     <div>
-      <div className="hidden pb-8 sm:block">
+      <div className=" pb-8 ">
         <div className="border-b  border-gray-200">
           <nav className="-mb-px flex" aria-label="Tabs">
             {tabs.map((tab, i) => (
@@ -48,7 +48,6 @@ export default function Doorpartnav() {
           </nav>
         </div>
       </div>
-      {/* <div>{tabComponents[activeTabname]}</div> */}
     </div>
   )
 }

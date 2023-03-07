@@ -10,12 +10,7 @@ export default function Doorcard(updateFields) {
   const { isButtonClicked, setIsButtonClicked } = useGlobalContext()
   console.log(tab)
   const datadoors = [
-    { img: '', type: 'contemporary', alt: 'contemporary' },
     { img: '/Static/traditional.png', type: 'traditional', alt: 'traditonal' },
-    { img: '', type: 'glazed', alt: 'glazed' },
-    { img: '', type: 'french', alt: 'french' },
-    { img: '', type: 'cottage', alt: 'cottage' },
-    { img: '', type: 'bifold', alt: 'bifold' },
   ]
 
   const handleImageClick = (event, i) => {

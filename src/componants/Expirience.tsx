@@ -1,21 +1,13 @@
 import { Stage, OrbitControls } from '@react-three/drei'
 import Door from './Nobs'
-// import { useRef } from 'react'
+// import Model from './Bobs'
+import { useRef, useEffect } from 'react'
+import { useGlobalContext } from '../../app/Context/status'
 // import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 export default function Experience() {
-  // const orbitControls = useRef()
-
-  //  function handleChangeMesh() {
-  //    // Save the current camera state
-  //    const { target, position, zoom } = orbitControls.current.getCameraState()
-
-  //    // Change the mesh here...
-
-  //    // Restore the camera state
-  //    orbitControls.current.setCameraState({ target, position, zoom })
   //  }
-
+  const { tab } = useGlobalContext()
   return (
     <Canvas shadows camera={{ position: [4, 0, -12], fov: 35 }}>
       <Stage
