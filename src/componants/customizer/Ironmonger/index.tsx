@@ -9,10 +9,9 @@ function Ironmongery() {
   console.log(IM)
 
   const datadoors = [
-    { img: '/Static/traditional.png', type: 'Doorhandle', alt: 'Doorhandle' },
-    { img: '/Static/traditional.png', type: 'Doorknob', alt: 'Doorknob' },
+    { img: '/Static/doorhandle.webp', type: 'Doorhandle', alt: 'Doorhandle' },
+    { img: '/Static/doorknob.webp', type: 'Doorknob', alt: 'Doorknob' },
   ]
-
   const handleImageClick = (event, i) => {
     event.preventDefault() // prevent form submission
     setIM(datadoors[i].type)
