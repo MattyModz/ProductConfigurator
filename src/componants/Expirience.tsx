@@ -1,13 +1,13 @@
 import { Stage, OrbitControls } from '@react-three/drei'
 import Door1 from './Untitled'
 // import Model from './Bobs'
-import { useRef, useEffect } from 'react'
-import { useGlobalContext } from '../../app/Context/status'
+
+
 // import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 export default function Experience() {
   //  }
-  const { tab } = useGlobalContext()
+  // const { tab } = useGlobalContext()
   return (
     <Canvas shadows camera={{ position: [4, 0, -12], fov: 35 }}>
       <Stage

@@ -1,19 +1,19 @@
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useGlobalContext } from '../../app/Context/status'
-import * as THREE from 'three'
+// import * as THREE from 'three'
 const Door1 = (props) => {
   const { nodes, materials } = useGLTF('/model/Untitled.gltf')
-  const { door } = useGlobalContext()
+  // const { door } = useGlobalContext()
   const { color } = useGlobalContext()
   const { IM } = useGlobalContext()
-  const newColor = new THREE.Color('#EEE9E7')
-  const data = [
-    { color: '#EEE9E7', colorName: 'Wevet' },
-    { color: '#C4BEB4', colorName: 'Purbeck stone' },
-    { color: '#DFD6CB', colorName: 'Skimming Stone' },
-    { color: '#C0C2B3', colorName: 'Mizzle' },
-  ]
+  // const newColor = new THREE.Color('#EEE9E7')
+  // const data = [
+  //   { color: '#EEE9E7', colorName: 'Wevet' },
+  //   { color: '#C4BEB4', colorName: 'Purbeck stone' },
+  //   { color: '#DFD6CB', colorName: 'Skimming Stone' },
+  //   { color: '#C0C2B3', colorName: 'Mizzle' },
+  // ]
 
   return (
     <group {...props} dispose={null}>

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { useGlobalContext } from '../../../../app/Context/status'
 import { motion } from 'framer-motion'
 
-export default function Doorcard(updateFields) {
+export default function Doorcard() {
   const [selected, setSelected] = useState(0)
   const { door, setDoor } = useGlobalContext()
   const { tab } = useGlobalContext()
