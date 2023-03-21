@@ -1,9 +1,8 @@
 import { Stage, OrbitControls } from '@react-three/drei'
-import Door1 from './Untitled'
+import Door from './Nobs'
 // import Model from './Bobs'
 
-
-// import { Suspense } from 'react'
+import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 export default function Experience() {
   //  }
@@ -16,7 +15,7 @@ export default function Experience() {
         shadows={{ type: 'accumulative', colorBlend: 2, opacity: 2 }}
         adjustCamera={0.9}
       >
-        <Door1 />
+        <Door />
       </Stage>
       <OrbitControls
         makeDefault

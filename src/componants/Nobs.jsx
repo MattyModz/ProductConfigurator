@@ -8,7 +8,7 @@ import { useGLTF } from '@react-three/drei'
 import { useGlobalContext } from '../../app/Context/status'
 import * as THREE from 'three'
 const Door = (props) => {
-  const { nodes, materials } = useGLTF('./model/Door+nobs.gltf')
+  const { nodes, materials } = useGLTF('./model/Door2.gltf')
   const { door } = useGlobalContext()
   const { color } = useGlobalContext()
   const { IM } = useGlobalContext()
@@ -21,64 +21,40 @@ const Door = (props) => {
   ]
   return (
     <group {...props} dispose={null}>
-      <group position={[0, 0.58, 0.53]} rotation={[-0.04, 0.61, 0]}>
+      <group position={[-7.45, -1.3, 5.23]} scale={0.05}>
         <mesh
-          geometry={nodes.Door.geometry}
-          material={materials['Painted wooden door']}
-          material-color={color}
-          position={[0.69, 0.72, -0.14]}
-          rotation={[0, -0.61, 0.02]}
-        />
-        <mesh
-          geometry={nodes.Door001.geometry}
-          position={[0.69, 0.72, -0.14]}
-          rotation={[0, -0.61, 0.02]}
+          geometry={nodes.Circle002.geometry}
+          material={materials.DK_Metal}
+          position={[149.3, 45.5, -97.08]}
+          rotation={[0.54, 0.05, -1.57]}
+          scale={21.53}
           visible={IM === 'Doorknob' ? true : false}
         />
-        {/* <mesh
-          geometry={nodes.Door002.geometry}
-          position={[0.69, 0.72, -0.14]}
-          rotation={[0, -0.61, 0.02]}
-        />
-        <mesh
-          geometry={nodes.Door003.geometry}
-          position={[0.69, 0.72, -0.14]}
-          rotation={[0, -0.61, 0.02]}
-        />
-        <mesh
-          geometry={nodes.Door004.geometry}
-          position={[0.69, 0.72, -0.14]}
-          rotation={[0, -0.61, 0.02]}
-        />
-        <mesh
-          geometry={nodes.Door005.geometry}
-          position={[0.69, 0.72, -0.14]}
-          rotation={[0, -0.61, 0.02]}
-        /> */}
       </group>
-      {/* <group position={[-0.41, 1.07, 0.09]}>
-        <mesh geometry={nodes.Cube032.geometry} material={materials.Chrome} />
+      <mesh
+        geometry={nodes.Door.geometry}
+        material={materials.WhiteWood}
+        position={[0.01, 0, -0.49]}
+        material-color={color}
+      >
         <mesh
-          geometry={nodes.Cube032_1.geometry}
-          material={materials.BrushedSteel}
+          geometry={nodes.handle.geometry}
+          material={materials.MetalBronzeChrome}
+          position={[-0.03, 0.98, 0.84]}
+          visible={IM === 'Doorknob' ? false : true}
         />
         <mesh
-          geometry={nodes.Cube032_2.geometry}
-          material={materials['Wood-5']}
+          geometry={nodes.Lock1.geometry}
+          material={materials.MetalBronzeChrome}
+          position={[0.01, 0.87, 0.88]}
         />
-      </group> */}
-      <mesh
-        geometry={nodes['Interior_Door_and_Frame_#11002'].geometry}
-        material={materials.Chrome}
-        position={[-1.1, 1.07, 0]}
-        visible={IM === 'Doorhandle' ? true : false}
-      />
-      <mesh
-        geometry={nodes['Interior_Door_and_Frame_#11003'].geometry}
-        position={[-1.1, 1.07, -0.05]}
-        rotation={[0, -0.05, 0]}
-        visible={IM === 'Doorhandle' ? true : false}
-      />
+        <mesh
+          geometry={nodes.Lock1001.geometry}
+          material={materials.MetalBronzeChrome}
+          position={[-0.06, 0.87, 0.88]}
+          rotation={[Math.PI, 0, Math.PI]}
+        />
+      </mesh>
     </group>
   )
 }
