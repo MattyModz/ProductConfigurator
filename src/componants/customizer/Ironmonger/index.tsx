@@ -9,8 +9,8 @@ function Ironmongery() {
   console.log(IM)
 
   const datadoors = [
-    { img: '', type: 'Doorhandle', alt: 'Doorhandle' },
-    { img: '', type: 'Doorknob', alt: 'Doorknob' },
+    { img: '/Static/traditional.png', type: 'Doorhandle', alt: 'Doorhandle' },
+    { img: '/Static/traditional.png', type: 'Doorknob', alt: 'Doorknob' },
   ]
 
   const handleImageClick = (event, i) => {
