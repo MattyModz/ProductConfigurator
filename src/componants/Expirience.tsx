@@ -1,5 +1,5 @@
 import { Stage, OrbitControls } from '@react-three/drei'
-import Door from './Nobs'
+import Door1 from './Untitled'
 // import Model from './Bobs'
 import { useRef, useEffect } from 'react'
 import { useGlobalContext } from '../../app/Context/status'
@@ -16,7 +16,7 @@ export default function Experience() {
         shadows={{ type: 'accumulative', colorBlend: 2, opacity: 2 }}
         adjustCamera={0.9}
       >
-        <Door />
+        <Door1 />
       </Stage>
       <OrbitControls
         makeDefault
